@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css card</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        #box {
+            width: 100%;
+            height: auto;
+            /* border: 2px solid red; */
+            margin-top: 7%;
+        }
+        
+        .photo {
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2%;
+            margin: auto;
+        }
+        
+        img {
+            /* height: 235.54px; */
+            width: 100%;
+            height: auto;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 65px;
+            margin-bottom: 30px;
+        }
+        
+        .title {
+            margin: auto;
+            height: auto;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .title p {
+            width: 40%;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        
+        .photo h2,
+        p {
+            text-align: center;
+        }
+        
+        .photo h2 {
+            margin: 18px 0;
+        }
+        
+        h1,
+        .photo p {
+            color: #ffba5a;
+        }
+        
+        @media screen and (max-width:767px) {
+            .photo {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
+        
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            .photo {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box">
+        <div class="title">
+            <h1>Rooms & Suits</h1>
+            <p>Far far away behind the word mountain,far from the countries Volalia and consonatia live the blind text.Separated they live in bookmargrove right at the coast of the seminatic,a large language ocean.</p>
+        </div>
+
+        <div class="photo">
+            <div>
+                <img src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp" />
+                <h2>Single Room</h2>
+                <p>90 $ / PER NIGHT</p>
+            </div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/sogo/images/ximg_2.jpg.pagespeed.ic.Y_xvNxfEhu.webp" />
+                <h2>Family Room</h2>
+                <p> 120 $ / PER NIGHT</p>
+            </div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/sogo/images/ximg_3.jpg.pagespeed.ic.mYPnC0rXDl.webp" />
+                <h2>Presidential Room</h2>
+                <p> 250 $ / PER NIGHT</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

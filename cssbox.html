@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        #box {
+            width: 70%;
+            height: auto;
+            /* border: 2px solid red; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin-top: 7%;
+            column-gap: 3%;
+            margin-left: 15%;
+        }
+        
+        .box1 {
+            border: 2px solid white;
+            margin-bottom: 10%;
+            height: auto;
+            padding: 10%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5%;
+        }
+        
+        .box1>div {
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 10%;
+        }
+        
+        .box1>div h2:last-child {
+            color: rgb(148, 96, 18);
+        }
+        
+        .box1>div+p {
+            color: rgba(55, 52, 27, 0.678);
+            font-size: 17.5px;
+        }
+        
+        @media screen and (max-width:767px) {
+            #box {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(9, 1fr);
+            }
+        }
+        
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            #box {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="box1">
+            <div>
+                <h2>Cappuccino</h2>
+                <h2>$45</h2>
+            </div>
+            <p>Usage the internet is becoming more common due the to rapid advace </p>
+        </div>
+        <div class="box1">
+            <div>
+                <h2>Americano</h2>
+                <h2>$45</h2>
+            </div>
+            <p>Usage the internet is becoming more common due the to rapid advace </p>
+        </div>
+        <div class="box1">
+            <div>
+                <h2>Espresson</h2>
+                <h2>$45</h2>
+            </div>
+            <p>Usage the internet is becoming more common due the to rapid advace </p>
+        </div>
+        <div class="box1">
+            <div>
+                <h2>Macchiono</h2>
+                <h2>$45</h2>
+            </div>
+            <p>Usage the internet is becoming more common due the to rapid advace </p>
+        </div>
+        <div class="box1">
+            <div>
+                <h2>Moccho</h2>
+                <h2>$45</h2>
+            </div>
+            <p>Usage the internet is becoming more common due the to rapid advace </p>
+        </div>
+        <div class="box1">
+            <div>
+                <h2>Coffe Lette</h2>
+                <h2>$45</h2>
+            </div>
+            <p>Usage the internet is becoming more common due the to rapid advace </p>
+        </div>
+        <div class="box1">
+            <div>
+                <h2>Macchalo</h2>
+                <h2>$45</h2>
+            </div>
+            <p>Usage the internet is becoming more common due the to rapid advace </p>
+        </div>
+        <div class="box1">
+            <div>
+                <h2>Coffecota Tae</h2>
+                <h2>$45</h2>
+            </div>
+            <p>Usage the internet is becoming more common due the to rapid advace </p>
+        </div>
+        <div class="box1">
+            <div>
+                <h2>Affagota</h2>
+                <h2>$45</h2>
+            </div>
+            <p>Usage the internet is becoming more common due the to rapid advace </p>
+        </div>
+    </div>
+</body>
+
+</html>

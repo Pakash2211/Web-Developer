@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        #mbox {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .top-section {
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 0% 2%;
+            /* margin-left: 25%; */
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: auto;
+        }
+        
+        .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 7%;
+        }
+        
+        .box>div h4 {
+            margin-bottom: 2%;
+        }
+        
+        .box>div {
+            width: 70%;
+        }
+        
+        .box>img {
+            width: 25%;
+            height: auto;
+        }
+        
+        .bottom-section {
+            width: 70%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* margin-left: 15%; */
+        }
+        
+        .bottom-section>p {
+            margin: 1% 0%;
+        }
+        
+        .teachers {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 1%;
+            height: auto;
+            margin-top: 3%;
+        }
+        
+        .teachers>div img {
+            height: auto;
+            width: 100%;
+            display: block;
+        }
+        
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .about h3+p {
+            color: red;
+        }
+        
+        .about p {
+            text-align: center;
+        }
+        
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            .top-section {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+            .teachers {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+        
+        @media screen and (max-width:767px) {
+            .top-section {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+            }
+            .teachers {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mbox">
+        <div class="top-section">
+            <div class="box">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" />
+                <div>
+                    <h4>Business School</h4>
+                    <p>cras vitae lacana lacana la har eja,fermantation</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" />
+                <div>
+                    <h4>Social Media</h4>
+                    <p>cras vitae lacana lacana la har eja,fermantation</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" />
+                <div>
+                    <h4>Design</h4>
+                    <p>cras vitae lacana lacana la har eja,fermantation</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" />
+                <div>
+                    <h4>Development</h4>
+                    <p>cras vitae lacana lacana la har eja,fermantation</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" />
+                <div>
+                    <h4>Photography</h4>
+                    <p>cras vitae lacana lacana la har eja,fermantation</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" />
+                <div>
+                    <h4>Marketing</h4>
+                    <p>cras vitae lacana lacana la har eja,fermantation</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-section">
+            <h2>Certified Teacher</h2>
+            <p> Teacher separated they live in.the best teacher ever in word to best teacher ever Teacher </p>
+            <div class="teachers">
+                <div class="about">
+                    <img src="https://static.wixstatic.com/media/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg/v1/fill/w_1440,h_960,al_c/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg" />
+                    <h3>Bianca wilson</h3>
+                    <P>TEACHER</P>
+                    <p>i am a an ambious,but a part from that,pretty simple person</p>
+                </div>
+                <div class="about">
+                    <img src="https://static.wixstatic.com/media/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg/v1/fill/w_1440,h_960,al_c/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg" />
+                    <h3>Bianca wilson</h3>
+                    <P>TEACHER</P>
+                    <p>i am a an ambious,but a part from that,pretty simple person</p>
+
+                </div>
+                <div class="about">
+                    <img src="https://static.wixstatic.com/media/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg/v1/fill/w_1440,h_960,al_c/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg" />
+                    <h3>Bianca wilson</h3>
+                    <P>TEACHER</P>
+                    <p>i am a an ambious,but a part from that,pretty simple person</p>
+
+                </div>
+                <div class="about">
+                    <img src="https://static.wixstatic.com/media/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg/v1/fill/w_1440,h_960,al_c/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg" />
+                    <h3>Bianca wilson</h3>
+                    <P>TEACHER</P>
+                    <p>i am a an ambious,but a part from that,pretty simple person</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
